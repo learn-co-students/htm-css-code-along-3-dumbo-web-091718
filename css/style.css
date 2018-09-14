@@ -1,0 +1,61 @@
+/* This is a comment */
+
+/* CSS Syntax:
+
+selector {
+  property: value;
+  property: value;
+}
+
+*/
+
+p {
+  font-size: 1em; /* 1em equal to 16px */
+  line-height: 1.5em;
+}
+
+figcaption { /* tag defines a caption for a 'figure' el, or photo */
+  /* font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif; */ /* if georgia dne, then use 'NTR' */
+  font: normal 0.75em/1.5em Georgia, "New Times Roman", serif;
+  color: #777; /* 8844CC can be shorthand as #84C as long as there are 3 pairs */
+  text-align: right;
+}
+
+/* Class selector (applied to as many el as you like) */
+.milk-text {
+  font: bold 2.6em 'Elsie Swash Caps', cursive; /* imported font called Elsie Swash Caps */
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+
+/* ID selector (applied to one unique el per page) */
+#logo {
+  background: aqua;
+}
+
+/* Descendant selector */
+#logo h1 { /* h1 is a descendant of #logo */
+  font-family: 'Clicker Script', cursive;
+}
+
+#logo h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Pseudo selector */
+#details a:link #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: red;
+}
